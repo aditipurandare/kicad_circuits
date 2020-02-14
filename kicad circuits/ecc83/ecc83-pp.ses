@@ -1,0 +1,210 @@
+
+(session "ecc83-pp.ses"
+  (base_design "ecc83-pp.dsn")
+  (placement
+    (resolution um 10)
+    (component "Valve:Valve_ECC-83-1"
+      (place U1 1492250 -1136650 front 0)
+    )
+    (component discret:R3
+      (place R3 1300480 -1238250 front 180)
+      (place R1 1358900 -1117600 front 270)
+      (place R2 1512570 -977900 front 180)
+      (place R4 1644650 -1212850 front 270)
+    )
+    (component "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+      (place P4 1455420 -1311910 front 0)
+      (place P2 1282700 -1127760 front 270)
+    )
+    (component "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal::1"
+      (place P3 1282700 -1007110 front 270)
+      (place P1 1645920 -1052830 front 90)
+    )
+    (component discret:C2V10
+      (place C1 1394460 -972820 front 90)
+    )
+    (component discret:C2
+      (place C2 1371600 -1225550 front 90)
+    )
+    (component connect:1pin
+      (place P5 1270000 -939800 front 0)
+      (place P6 1651000 -939800 front 0)
+      (place P7 1651000 -1337310 front 0)
+      (place P8 1270000 -1337310 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "5.1.5-52549c5~84~ubuntu18.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_1200:600_um"
+        (shape
+          (circle top_cu 12000 0 0)
+        )
+        (shape
+          (circle bottom_cu 12000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(C1-Pad1)"
+        (wire
+          (path top_cu 8000
+            1282700 -1007110
+            1303703 -1007110
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1394460 -1006666
+            1304147 -1006666
+            1303703 -1007110
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1394460 -1006666
+            1394460 -1015113
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1394460 -998220
+            1394460 -1006666
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1394460 -1015113
+            1457650 -1078303
+            1457650 -1089550
+          )
+        )
+      )
+      (net "Net-(C2-Pad1)"
+        (wire
+          (path top_cu 8000
+            1282700 -1127760
+            1282700 -1148763
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1338580 -1238250
+            1338580 -1203330
+            1284013 -1148763
+            1282700 -1148763
+          )
+        )
+        (wire
+          (path bottom_cu 8000
+            1371600 -1250950
+            1351280 -1250950
+            1338580 -1238250
+          )
+        )
+      )
+      (net "Net-(C2-Pad2)"
+        (wire
+          (path bottom_cu 8000
+            1358900 -1155700
+            1435400 -1155700
+            1436150 -1154950
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1371600 -1200150
+            1358900 -1187450
+            1358900 -1155700
+          )
+        )
+      )
+      (net "Net-(P1-Pad2)"
+        (wire
+          (path top_cu 8000
+            1644650 -1162487
+            1555387 -1162487
+            1548250 -1155350
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1645920 -1002830
+            1666924 -1023834
+            1666924 -1140213
+            1644650 -1162487
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1644650 -1162487
+            1644650 -1174750
+          )
+        )
+      )
+      (net "Net-(P4-Pad1)"
+        (wire
+          (path top_cu 8000
+            1455420 -1311910
+            1455420 -1186880
+            1457650 -1184650
+          )
+        )
+      )
+      (net "Net-(P4-Pad2)"
+        (wire
+          (path top_cu 8000
+            1514315 -1100215
+            1492250 -1078150
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1526750 -1089550
+            1516085 -1100215
+            1514315 -1100215
+          )
+        )
+        (wire
+          (path top_cu 8000
+            1505420 -1311910
+            1505420 -1109110
+            1514315 -1100215
+          )
+        )
+      )
+      (net "Net-(R1-Pad1)"
+        (wire
+          (path bottom_cu 8000
+            1436150 -1118850
+            1501950 -1184650
+            1526750 -1184650
+          )
+        )
+        (wire
+          (path bottom_cu 8000
+            1358900 -1079500
+            1398250 -1118850
+            1436150 -1118850
+          )
+        )
+      )
+      (net "Net-(R2-Pad1)"
+        (wire
+          (path top_cu 8000
+            1550670 -977900
+            1550670 -1116430
+            1548250 -1118850
+          )
+        )
+      )
+    )
+  )
+)

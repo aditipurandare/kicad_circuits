@@ -1,0 +1,1400 @@
+
+(session pic_programmer.ses
+  (base_design pic_programmer.dsn)
+  (placement
+    (resolution um 10)
+    (component MountingHole:MountingHole_4.3mm_M4
+      (place P104 2298700 -444500 front 0)
+      (place P101 774700 -1358900 front 0)
+      (place P102 1587500 -1358900 front 0)
+      (place P103 2298700 -1358900 front 0)
+      (place P105 1587500 -444500 front 0)
+      (place P106 774700 -444500 front 0)
+    )
+    (component "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+      (place JP1 1480820 -977900 back 180)
+    )
+    (component "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
+      (place U3 965200 -711200 front 0)
+    )
+    (component Inductor_THT:L_Radial_D7.8mm_P5.00mm_Fastron_07HCP
+      (place L1 1257300 -622300 front 270)
+    )
+    (component LED_THT:LED_D5.0mm
+      (place D12 1562100 -971550 front 180)
+      (place D9 1562100 -876300 front 180)
+      (place D8 1562100 -774700 front 180)
+    )
+    (component Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal
+      (place C2 845820 -901700 front 0)
+      (place C1 1104900 -788670 front 180)
+    )
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+      (place R12 1352550 -1219200 front 90)
+      (place R8 1390650 -910590 front 0)
+      (place R13 1403350 -1117600 front 270)
+      (place R14 1390650 -876300 front 0)
+      (place R15 1181100 -787400 front 0)
+      (place R16 1181100 -751840 front 0)
+      (place R17 1562100 -685800 front 90)
+      (place R19 1492250 -838200 front 180)
+      (place R20 1447800 -1022350 front 180)
+      (place R21 1581150 -1022350 front 180)
+      (place R6 877570 -1219200 front 0)
+      (place R7 1397000 -546100 front 0)
+      (place R5 877570 -1254760 front 0)
+      (place R4 876300 -1078230 front 0)
+      (place R3 876300 -1111250 front 0)
+      (place R2 876300 -1145540 front 0)
+      (place R1 876300 -1181100 front 0)
+      (place R9 1390650 -774700 front 0)
+      (place R10 1143000 -482600 front 0)
+      (place R18 1524000 -685800 front 90)
+      (place R11 1400810 -709930 front 90)
+    )
+    (component "footprints:40tex-Ell600"
+      (place P3 1828800 -749300 front 270)
+    )
+    (component footprints:RV2X4
+      (place RV1 1225550 -882650 front 180)
+    )
+    (component "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+      (place P1 787000 -623000 front 270)
+    )
+    (component "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal"
+      (place D10 1371600 -571500 front 180)
+      (place D1 877570 -711200 front 90)
+    )
+    (component Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm
+      (place C9 1430020 -497840 front 0)
+      (place C7 1987550 -711200 front 270)
+      (place C6 1968500 -1123950 front 270)
+      (place C5 1295400 -495300 front 0)
+      (place C4 1143000 -520700 front 0)
+    )
+    (component "footprints:TO-92_BC237_307"
+      (place Q2 1480820 -607060 front 180)
+      (place Q1 1460500 -698500 front 0)
+      (place Q3 1422400 -977900 front 0)
+    )
+    (component "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
+      (place J1 826000 -1202000 front 270)
+    )
+    (component "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+      (place D6 1079500 -1250950 front 180)
+      (place D7 1079500 -1153160 front 180)
+      (place D11 1390650 -806450 front 0)
+      (place D5 1079500 -1085850 front 180)
+      (place D4 1079500 -1118870 front 180)
+      (place D3 1079500 -1219200 front 180)
+      (place D2 1079500 -1182370 front 180)
+    )
+    (component "Package_DIP:DIP-14_W7.62mm_LongPads"
+      (place U2 1155700 -1193800 front 90)
+    )
+    (component "Package_DIP:DIP-18_W7.62mm_Socket_LongPads"
+      (place U5 2078990 -1079500 front 0)
+    )
+    (component "Package_DIP:DIP-28_W7.62mm_Socket_LongPads"
+      (place P2 2076450 -508000 front 0)
+    )
+    (component "Package_DIP:DIP-8_W7.62mm_LongPads"
+      (place U4 1104900 -571500 front 0)
+    )
+    (component "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+      (place U1 1790700 -1092200 front 0)
+      (place U6 1790700 -1206500 front 0)
+    )
+    (component Capacitors_THT:C_Axial_L12.0mm_D6.5mm_P20.00mm_Horizontal
+      (place C3 1341120 -622300 front 270)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "5.1.5-52549c5~84~ubuntu18.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_1600:600_um"
+        (shape
+          (circle top_layer 16000 0 0)
+        )
+        (shape
+          (circle bottom_layer 16000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /CTS
+        (wire
+          (path top_layer 5000
+            1231900 -1117600
+            1231900 -1134603
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1231900 -1134603
+            1231126 -1135377
+            996608 -1135377
+            993135 -1131904
+            798446 -1131904
+            797600 -1132750
+          )
+        )
+      )
+      (net /DTR
+        (wire
+          (path bottom_layer 5000
+            876300 -1111250
+            876300 -1078230
+          )
+        )
+        (wire
+          (path top_layer 5000
+            826000 -1118900
+            868650 -1118900
+            876300 -1111250
+          )
+        )
+      )
+      (net "/PC-CLOCK-OUT"
+        (wire
+          (path bottom_layer 5000
+            877570 -1254760
+            877570 -1219200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            797600 -1160450
+            797600 -1164559
+            820345 -1187304
+            845674 -1187304
+            877570 -1219200
+          )
+        )
+      )
+      (net /TXD
+        (wire
+          (path bottom_layer 5000
+            876300 -1181100
+            876300 -1145540
+          )
+        )
+        (wire
+          (path top_layer 5000
+            826000 -1146600
+            875240 -1146600
+            876300 -1145540
+          )
+        )
+      )
+      (net "Net-(C2-Pad1)"
+        (wire
+          (path bottom_layer 5000
+            845820 -901700
+            845820 -884697
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            845820 -884697
+            877570 -852947
+            877570 -711200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            877570 -711200
+            890573 -711200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            965200 -711200
+            965200 -691197
+          )
+        )
+        (wire
+          (path top_layer 5000
+            890573 -711200
+            910576 -691197
+            965200 -691197
+          )
+        )
+      )
+      (net "Net-(C4-Pad1)"
+        (wire
+          (path bottom_layer 5000
+            1143000 -520700
+            1143000 -482600
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1121903 -571500
+            1121903 -541797
+            1143000 -520700
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1104900 -571500
+            1121903 -571500
+          )
+        )
+      )
+      (net "Net-(C5-Pad1)"
+        (wire
+          (path top_layer 5000
+            1244600 -482600
+            1257603 -482600
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1295400 -495300
+            1270303 -495300
+            1257603 -482600
+          )
+        )
+      )
+      (net "Net-(C9-Pad2)"
+        (wire
+          (path bottom_layer 5000
+            1498600 -546100
+            1498600 -559103
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1468120 -619760
+            1468120 -589583
+            1498600 -559103
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1480020 -497840
+            1498600 -516420
+            1498600 -546100
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1400810 -608330
+            1413813 -608330
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1468120 -619760
+            1425243 -619760
+            1413813 -608330
+          )
+        )
+      )
+      (net "Net-(D11-Pad1)"
+        (wire
+          (path top_layer 5000
+            1460500 -698500
+            1412240 -698500
+            1400810 -709930
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1390650 -806450
+            1390650 -793447
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1390650 -793447
+            1404156 -779941
+            1404156 -713276
+            1400810 -709930
+          )
+        )
+      )
+      (net "Net-(D11-Pad2)"
+        (wire
+          (path bottom_layer 5000
+            1466850 -806450
+            1466850 -819453
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1466850 -819453
+            1473503 -819453
+            1492250 -838200
+          )
+        )
+      )
+      (net "Net-(Q1-Pad2)"
+        (wire
+          (path bottom_layer 5000
+            1492250 -910590
+            1492250 -897587
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1473200 -685800
+            1473200 -774041
+            1453793 -793448
+            1453793 -859130
+            1492250 -897587
+          )
+        )
+      )
+      (net "Net-(Q2-Pad3)"
+        (wire
+          (path top_layer 5000
+            1390650 -774700
+            1435100 -774700
+            1524000 -685800
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1524000 -685800
+            1562100 -685800
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1480820 -607060
+            1524000 -650240
+            1524000 -685800
+          )
+        )
+      )
+      (net "Net-(Q3-Pad2)"
+        (wire
+          (path top_layer 5000
+            1346200 -1022350
+            1359203 -1022350
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1359203 -1022350
+            1416353 -965200
+            1435100 -965200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1390650 -838200
+            1390650 -851203
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1435100 -965200
+            1435100 -895653
+            1390650 -851203
+          )
+        )
+      )
+      (net "Net-(R12-Pad1)"
+        (wire
+          (path top_layer 5000
+            1282700 -1193800
+            1282700 -1210803
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1282700 -1210803
+            1291097 -1219200
+            1352550 -1219200
+          )
+        )
+      )
+      (net "Net-(R13-Pad1)"
+        (wire
+          (path bottom_layer 5000
+            1308100 -1117600
+            1308100 -1100597
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1308100 -1100597
+            1386347 -1100597
+            1403350 -1117600
+          )
+        )
+      )
+      (net "Net-(R15-Pad1)"
+        (wire
+          (path bottom_layer 5000
+            1276350 -908050
+            1276350 -882650
+            1181100 -787400
+          )
+        )
+      )
+      (net "Net-(R16-Pad1)"
+        (wire
+          (path bottom_layer 5000
+            1276350 -857250
+            1181100 -762000
+            1181100 -751840
+          )
+        )
+      )
+      (net "Net-(R8-Pad1)"
+        (wire
+          (path bottom_layer 5000
+            1206500 -1193800
+            1206500 -1210803
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1206500 -1210803
+            1207123 -1211426
+            1327915 -1211426
+            1416706 -1122635
+            1416706 -995096
+            1390650 -969040
+            1390650 -910590
+          )
+        )
+      )
+      (net "Net-(RV1-Pad2)"
+        (wire
+          (path bottom_layer 5000
+            1104900 -596900
+            1087897 -596900
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1087897 -596900
+            1087897 -712587
+            1174750 -799440
+            1174750 -882650
+          )
+        )
+      )
+      (net VCC
+        (wire
+          (path bottom_layer 8000
+            1257300 -672300
+            1257300 -747944
+            1278976 -769620
+            1285924 -769620
+            1316612 -800308
+            1316612 -819657
+            1373255 -876300
+            1390650 -876300
+          )
+        )
+        (wire
+          (path top_layer 8000
+            1181100 -647700
+            1162297 -647700
+          )
+        )
+        (wire
+          (path top_layer 8000
+            1162297 -647700
+            1120600 -689397
+            1016000 -689397
+          )
+        )
+        (wire
+          (path top_layer 8000
+            1181100 -647700
+            1232700 -647700
+            1257300 -672300
+          )
+        )
+        (wire
+          (path top_layer 8000
+            1016000 -711200
+            1016000 -689397
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1016000 -711200
+            1016000 -733003
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1104900 -798071
+            1081068 -798071
+            1016000 -733003
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1104900 -798071
+            1104900 -807473
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1104900 -788670
+            1104900 -798071
+          )
+        )
+        (wire
+          (path top_layer 8000
+            1390650 -876300
+            1447800 -933450
+            1447800 -977900
+          )
+        )
+        (wire
+          (path top_layer 8000
+            1447800 -1022350
+            1447800 -977900
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1447800 -977900
+            1473570 -977900
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1155700 -1117600
+            1155700 -858273
+            1104900 -807473
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1079500 -1182370
+            1079500 -1197173
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1079500 -1197173
+            1075798 -1197173
+            1064697 -1208274
+            1064697 -1230596
+            1070248 -1236147
+            1079500 -1236147
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1079500 -1250950
+            1079500 -1236147
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1079500 -1182370
+            1064697 -1167567
+            1064697 -1141999
+            1073023 -1133673
+            1079500 -1133673
+          )
+        )
+        (wire
+          (path bottom_layer 8000
+            1079500 -1118870
+            1079500 -1133673
+          )
+        )
+        (wire
+          (path top_layer 8000
+            1079500 -1118870
+            1094303 -1118870
+          )
+        )
+        (wire
+          (path top_layer 8000
+            1155700 -1117600
+            1095573 -1117600
+            1094303 -1118870
+          )
+        )
+      )
+      (net VPP
+        (wire
+          (path bottom_layer 5000
+            1282700 -751840
+            1282700 -738837
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1341120 -622300
+            1341120 -680417
+            1282700 -738837
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1341120 -615798
+            1341120 -622300
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1341120 -615798
+            1341120 -609297
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1371600 -578001
+            1397000 -552601
+            1397000 -546100
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1371600 -578001
+            1371600 -584503
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1371600 -571500
+            1371600 -578001
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1430020 -497840
+            1397000 -530860
+            1397000 -546100
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1455420 -607060
+            1455420 -597057
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1455420 -597057
+            1447957 -597057
+            1397000 -546100
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1341120 -609297
+            1346806 -609297
+            1371600 -584503
+          )
+        )
+      )
+      (net /pic_sockets/VCC_PIC
+        (wire
+          (path bottom_layer 5000
+            1479549 -1022350
+            1479547 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479550 -1022350
+            1479549 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479547 -1022350
+            1479544 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479544 -1022350
+            1479538 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479538 -1022350
+            1479525 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479525 -1022350
+            1479500 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479500 -1022350
+            1479449 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479449 -1022350
+            1479347 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479347 -1022350
+            1479144 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1479144 -1022350
+            1478738 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1478738 -1022350
+            1477925 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1477925 -1022350
+            1476300 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1476300 -1022350
+            1473049 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1473049 -1022350
+            1466547 -1022350
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1479550 -1022350
+            1492553 -1022350
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1866900 -1092200
+            1849897 -1092200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1849897 -1092200
+            1832894 -1075197
+            1545400 -1075197
+            1492553 -1022350
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1968500 -1123950
+            1936750 -1092200
+            1866900 -1092200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1828588 -768609
+            1885997 -711200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1858399 -1092200
+            1858399 -798420
+            1828588 -768609
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1828588 -768609
+            1778212 -768609
+            1771603 -762000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1905000 -711200
+            1885997 -711200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1987550 -711200
+            1905000 -711200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1752600 -762000
+            1771603 -762000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1858399 -1092200
+            1849897 -1092200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1866900 -1092200
+            1858399 -1092200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1422400 -977900
+            1466547 -1022047
+            1466547 -1022350
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2155190 -1181100
+            2138187 -1181100
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2085406 -851802
+            2058964 -851802
+            1974029 -766867
+            1974029 -724721
+            1987550 -711200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2135647 -711200
+            2114550 -732297
+            2114550 -822658
+            2085406 -851802
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2138187 -1181100
+            2138187 -904583
+            2085406 -851802
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2152650 -711200
+            2135647 -711200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1790700 -1206500
+            1807703 -1206500
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1807703 -1206500
+            1849897 -1164306
+            1849897 -1092200
+          )
+        )
+      )
+      (net "Net-(D1-Pad2)"
+        (wire
+          (path bottom_layer 5000
+            877570 -584200
+            864567 -584200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            864567 -584200
+            864567 -595433
+            787000 -673000
+          )
+        )
+      )
+      (net "Net-(D4-Pad2)"
+        (wire
+          (path top_layer 5000
+            1079500 -1085850
+            1066497 -1085850
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1066497 -1085850
+            1033477 -1118870
+            1003300 -1118870
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1003300 -1118870
+            985520 -1118870
+            977900 -1111250
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1079500 -1085850
+            1092503 -1085850
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1257300 -1193800
+            1257300 -1176797
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1257300 -1176797
+            1219081 -1138578
+            1145231 -1138578
+            1092503 -1085850
+          )
+        )
+      )
+      (net "Net-(D8-Pad2)"
+        (wire
+          (path top_layer 5000
+            1492250 -774700
+            1536700 -774700
+          )
+        )
+      )
+      (net "Net-(D9-Pad2)"
+        (wire
+          (path bottom_layer 5000
+            1492250 -876300
+            1536700 -876300
+          )
+        )
+      )
+      (net "Net-(D12-Pad2)"
+        (wire
+          (path bottom_layer 5000
+            1581150 -1022350
+            1536700 -977900
+            1536700 -971550
+          )
+        )
+      )
+      (net /VPP/MCLR
+        (wire
+          (path top_layer 5000
+            1524000 -584200
+            1537003 -584200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1752600 -508000
+            1613203 -508000
+            1537003 -584200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1755759 -508000
+            1752600 -508000
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1755759 -508000
+            1771603 -508000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2039249 -1132961
+            1966488 -1060201
+            1966488 -600959
+            2059447 -508000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2063863 -1155700
+            2061987 -1155700
+            2039249 -1132961
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1807703 -1282700
+            1821163 -1296160
+            1876050 -1296160
+            2039249 -1132961
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2076450 -508000
+            2059447 -508000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2078990 -1155700
+            2063863 -1155700
+          )
+        )
+        (wire
+          (path top_layer 5000
+            2076450 -508000
+            1962500 -508000
+            1949497 -494997
+            1784606 -494997
+            1771603 -508000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1790700 -1282700
+            1807703 -1282700
+          )
+        )
+      )
+      (net "/CLOCK-RB6"
+        (wire
+          (path top_layer 5000
+            1883903 -1288592
+            1876682 -1295813
+            1492966 -1295813
+            1416353 -1219200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1883903 -1257300
+            1883903 -1288592
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1883903 -1288592
+            1898809 -1303498
+            2157077 -1303498
+            2172193 -1288382
+            2172193 -1231900
+          )
+        )
+        (wire
+          (path top_layer 5000
+            2155190 -1231900
+            2172193 -1231900
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1924387 -533400
+            1924387 -1102516
+            1883903 -1143000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1924387 -533400
+            1905000 -533400
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2135647 -533400
+            2097243 -494996
+            2017733 -494996
+            1979329 -533400
+            1924387 -533400
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1883903 -1257300
+            1884668 -1256535
+            1884668 -1143765
+            1883903 -1143000
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1403350 -1219200
+            1416353 -1219200
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2152650 -533400
+            2135647 -533400
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1866900 -1257300
+            1883903 -1257300
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1866900 -1143000
+            1883903 -1143000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1866900 -1257300
+            1883903 -1257300
+          )
+        )
+      )
+      (net "/DATA-RB7"
+        (wire
+          (path bottom_layer 5000
+            2155190 -1206500
+            2172193 -1206500
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2152650 -508000
+            2169653 -508000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2169653 -508000
+            2172193 -510540
+            2172193 -1206500
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2148492 -508000
+            2152650 -508000
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2148492 -508000
+            2135647 -508000
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1352550 -1117600
+            1339547 -1117600
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1206500 -1117600
+            1206500 -1100597
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1206500 -1100597
+            1206950 -1100147
+            1322094 -1100147
+            1339547 -1117600
+          )
+        )
+        (wire
+          (path top_layer 5000
+            2155190 -1206500
+            2138187 -1206500
+          )
+        )
+        (wire
+          (path top_layer 5000
+            2138187 -1206500
+            2138187 -1245999
+            2088373 -1295813
+            2027115 -1295813
+            1963202 -1231900
+            1866900 -1231900
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            2135647 -508000
+            2114684 -487037
+            2006762 -487037
+            1985799 -508000
+            1905000 -508000
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1352550 -1117600
+            1365553 -1117600
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1866900 -1168400
+            1849897 -1168400
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1849897 -1168400
+            1836238 -1182059
+            1430012 -1182059
+            1365553 -1117600
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1866900 -1231900
+            1849897 -1231900
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1849897 -1231900
+            1849588 -1231591
+            1849588 -1185712
+            1866900 -1168400
+          )
+        )
+      )
+      (net "Net-(D2-Pad2)"
+        (wire
+          (path top_layer 5000
+            1079500 -1219200
+            1066497 -1219200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1066497 -1219200
+            1029667 -1182370
+            1003300 -1182370
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1181100 -1210803
+            1172703 -1219200
+            1079500 -1219200
+          )
+        )
+        (wire
+          (path top_layer 5000
+            977900 -1181100
+            990903 -1181100
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1003300 -1182370
+            992173 -1182370
+            990903 -1181100
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1181100 -1193800
+            1181100 -1210803
+          )
+        )
+      )
+      (net "Net-(D6-Pad2)"
+        (wire
+          (path top_layer 5000
+            979170 -1254760
+            992173 -1254760
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1003300 -1250950
+            995983 -1250950
+            992173 -1254760
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1003300 -1250950
+            1016303 -1250950
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1079500 -1153160
+            1079500 -1166163
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1079500 -1166163
+            1086814 -1166163
+            1093415 -1172764
+            1093415 -1261083
+            1090108 -1264390
+            1029743 -1264390
+            1016303 -1250950
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1282700 -1117600
+            1282700 -1134603
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1282700 -1134603
+            1264143 -1153160
+            1079500 -1153160
+          )
+        )
+      )
+      (net "Net-(D10-Pad2)"
+        (wire
+          (path bottom_layer 5000
+            1244600 -571500
+            1244600 -584503
+          )
+        )
+        (wire
+          (path bottom_layer 5000
+            1244600 -584503
+            1257300 -597203
+            1257300 -622300
+          )
+        )
+        (wire
+          (path top_layer 5000
+            1181100 -571500
+            1244600 -571500
+          )
+        )
+      )
+    )
+  )
+)

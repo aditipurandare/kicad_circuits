@@ -1,0 +1,77 @@
+
+(rules PCB ecc83-pp
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 60)
+    (layer_rule "top_cu"
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule "bottom_cu"
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 800.0)
+    (clear 400.2)
+    (clear 400.0 (type smd_to_turn_gap))
+    (clear 100.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_1200:600_um"
+    (shape
+      (circle "top_cu" 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle "bottom_cu" 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1200:600_um" "Via[0-1]_1200:600_um" default
+  )
+  (via 
+    "Via[0-1]_1200:600_um-kicad_default" "Via[0-1]_1200:600_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_1200:600_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1200:600_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer top_cu bottom_cu)
+    )
+  )
+  (class "kicad_default"
+    GND "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C2-Pad2)" "Net-(P1-Pad2)" "Net-(P4-Pad1)" "Net-(P4-Pad2)" "Net-(R1-Pad1)"
+    "Net-(R2-Pad1)" "Net-(P5-Pad1)" "Net-(P6-Pad1)" "Net-(P7-Pad1)" "Net-(P8-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer top_cu bottom_cu)
+    )
+  )
+)

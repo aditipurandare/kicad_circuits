@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name custom_pads_schlib)(type Legacy)(uri ${KIPRJMOD}/custom_pads_schlib.lib)(options "")(descr ""))
+  (lib (name custom_pads_test-rescue)(type Legacy)(uri ${KIPRJMOD}/custom_pads_test-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,122 @@
+
+(rules PCB carte_test
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 14342)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 400.0)
+    (clear 250.2)
+    (clear 200.0 (type smd_to_turn_gap))
+    (clear 62.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_900:600_um"
+    (shape
+      (circle F.Cu 900.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 900.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1200:600_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_900:600_um" "Via[0-1]_900:600_um" default
+  )
+  (via 
+    "Via[0-1]_1200:600_um" "Via[0-1]_1200:600_um" default
+  )
+  (via 
+    "Via[0-1]_900:600_um-kicad_default" "Via[0-1]_900:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:600_um-kicad_default" "Via[0-1]_1200:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_900:600_um-pwr" "Via[0-1]_900:600_um" pwr
+  )
+  (via 
+    "Via[0-1]_1200:600_um-pwr" "Via[0-1]_1200:600_um" pwr
+  )
+  (via_rule
+    default "Via[0-1]_900:600_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_900:600_um-kicad_default"
+  )
+  (via_rule
+    pwr "Via[0-1]_1200:600_um-pwr"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /CSMEM /DAT0 /DAT1 /DAT2 /DAT3 /DAT4 /DAT5 /DAT6
+    /DAT7 /DCLK /LED1 /LED2 /MA0 /MA1 /MA2 /MA3
+    /MA4 /MA5 /MA6 /MA7 /MD0 /MD1 /MD10 /MD11
+    /MD12 /MD13 /MD14 /MD2 /MD3 /MD4 /MD5 /MD6
+    /MD7 /MD8 /MD9 /OEMEM /PARBUS0 /PARBUS1 /PARBUS2 /PARBUS3
+    /PARBUS4 /PARBUS5 /PARBUS6 /PARBUS7 "/PAR_AUX0/STROBE*" "/PAR_AUX1/ERROR*" "/PAR_AUX2/AUTOLF*" "/PAR_AUX3/SELECT*"
+    "/PAR_AUX4/PE" "/PAR_AUX5/BUSY*" "/PAR_AUX6/ACK" "/PAR_AUX7/INIT" "/PAR_AUX8/SELECT" "/PIN_TEST0" "/PIN_TEST1" "/R/W-A14"
+    /SW0 /SW1 /TCK /TDI /TDO /TMS /XIN/CLK "Net-(C1-Pad1)"
+    "Net-(C14-Pad1)" "Net-(C14-Pad2)" "Net-(C2-Pad1)" "Net-(C2-Pad2)" "Net-(C4-Pad1)" "Net-(C5-Pad1)" "Net-(K1-Pad2)" "Net-(P3-Pad1)"
+    "Net-(R10-Pad2)" "Net-(R6-Pad1)" "Net-(R7-Pad2)" "Net-(U2-Pad14)" "Net-(U2-Pad15)" "Net-(U2-Pad17)" "Net-(U2-Pad18)" "Net-(U2-Pad19)"
+    "Net-(U2-Pad20)" "Net-(U2-Pad21)" "Net-(U2-Pad23)" "Net-(U2-Pad57)" "Net-(U2-Pad65)" "Net-(U4-Pad6)" "Net-(U4-Pad8)" "Net-(U4-Pad10)"
+    "Net-(U4-Pad12)" "Net-(U6-Pad1)" "Net-(U6-Pad5)" "Net-(U6-Pad8)" "Net-(D2-Pad2)" "Net-(D3-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class pwr
+    GND +12V "-12V" VCC /+12BATT "/-12BATT"
+    (clearance_class pwr)
+    (via_rule pwr)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

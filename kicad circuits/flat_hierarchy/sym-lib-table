@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name flat_hierarchy_schlib)(type Legacy)(uri ${KIPRJMOD}/flat_hierarchy_schlib.lib)(options "")(descr ""))
+  (lib (name flat_hierarchy-rescue)(type Legacy)(uri ${KIPRJMOD}/flat_hierarchy-rescue.lib)(options "")(descr ""))
+)

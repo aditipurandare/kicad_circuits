@@ -1,0 +1,98 @@
+
+(rules PCB complex_hierarchy
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 900)
+    (layer_rule "top_copper"
+      (active off)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+    (layer_rule "bottom_copper"
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+  )
+  (rule
+    (width 400.0)
+    (clear 300.2)
+    (clear 200.0 (type smd_to_turn_gap))
+    (clear 75.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_1651:635_um"
+    (shape
+      (circle "top_copper" 1651.0 0.0 0.0)
+    )
+    (shape
+      (circle "bottom_copper" 1651.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1651:635_um" "Via[0-1]_1651:635_um" default
+  )
+  (via 
+    "Via[0-1]_1651:635_um-kicad_default" "Via[0-1]_1651:635_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1651:635_um-power" "Via[0-1]_1651:635_um" power
+  )
+  (via_rule
+    default "Via[0-1]_1651:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1651:635_um-kicad_default"
+  )
+  (via_rule
+    power "Via[0-1]_1651:635_um-power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer bottom_copper)
+    )
+  )
+  (class "kicad_default"
+    "/ampli_ht_horizontal/PIEZO_IN" "/ampli_ht_horizontal/PIEZO_OUT" "/ampli_ht_horizontal/S_OUT+" "/ampli_ht_horizontal/Vpil_0_3,3V" "/ampli_ht_vertical/PIEZO_IN" "/ampli_ht_vertical/PIEZO_OUT" "/ampli_ht_vertical/S_OUT+" "/ampli_ht_vertical/Vpil_0_3,3V"
+    "Net-(C10-Pad1)" "Net-(C10-Pad2)" "Net-(C12-Pad1)" "Net-(C14-Pad1)" "Net-(C3-Pad2)" "Net-(C4-Pad1)" "Net-(C5-Pad1)" "Net-(C6-Pad2)"
+    "Net-(C7-Pad1)" "Net-(C8-Pad1)" "Net-(D4-Pad1)" "Net-(D4-Pad2)" "Net-(D7-Pad1)" "Net-(D7-Pad2)" "Net-(Q1-PadE)" "Net-(Q2-PadE)"
+    "Net-(Q3-PadE)" "Net-(Q4-PadB)" "Net-(Q4-PadE)" "Net-(Q5-PadE)" "Net-(Q6-PadE)" "Net-(Q7-PadE)" "Net-(Q8-PadB)" "Net-(Q8-PadE)"
+    "Net-(R11-Pad1)" "Net-(R19-Pad2)" "Net-(R21-Pad1)" "Net-(R9-Pad2)" "Net-(RV1-Pad2)" "Net-(RV2-Pad2)" "Net-(U1-Pad6)" "Net-(U1-Pad7)"
+    "Net-(D2-Pad1)" "Net-(D3-Pad1)" "Net-(D5-Pad1)" "Net-(D6-Pad1)" "Net-(D8-Pad2)" "Net-(D9-Pad2)" +12C
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer bottom_copper)
+    )
+  )
+  (class power
+    GND "-VAA" /12Vext HT VCC
+    (clearance_class power)
+    (via_rule power)
+    (rule
+      (width 600.0)
+    )
+    (circuit 
+      (use_layer bottom_copper)
+    )
+  )
+)

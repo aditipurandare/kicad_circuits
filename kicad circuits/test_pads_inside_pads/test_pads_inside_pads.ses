@@ -1,0 +1,114 @@
+
+(session test_pads_inside_pads.ses
+  (base_design test_pads_inside_pads.dsn)
+  (placement
+    (resolution um 10)
+    (component 1pin
+      (place P1 895350 -455930 front 0)
+    )
+    (component 1pin::1
+      (place P2 1076960 -455930 front 0)
+      (place P3 871220 -614680 front 0)
+      (place P4 1070610 -614680 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "5.1.5-52549c5~84~ubuntu18.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_889:635_um"
+        (shape
+          (circle Dessus 8890 0 0)
+        )
+        (shape
+          (circle Dessous 8890 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /NET1
+        (wire
+          (path Dessus 2032
+            1070610 -614680
+            871220 -614680
+          )
+        )
+      )
+      (net /NET2
+        (wire
+          (path Dessous 2032
+            812800 -411480
+            857250 -411480
+          )
+        )
+        (wire
+          (path Dessus 2032
+            895350 -411480
+            895350 -455930
+          )
+        )
+        (wire
+          (path Dessus 2032
+            895350 -379730
+            895350 -411480
+          )
+        )
+        (wire
+          (path Dessous 2032
+            895350 -411480
+            857250 -411480
+          )
+        )
+        (wire
+          (path Dessous 2032
+            933450 -411480
+            895350 -411480
+          )
+        )
+        (wire
+          (path Dessous 2032
+            977900 -411480
+            933450 -411480
+          )
+        )
+        (wire
+          (path Dessous 2032
+            1076960 -455930
+            1022350 -455930
+            977900 -411480
+          )
+        )
+        (wire
+          (path Dessus 2032
+            977900 -411480
+            977900 -379730
+          )
+        )
+        (wire
+          (path Dessus 2032
+            933450 -411480
+            933450 -379730
+          )
+        )
+        (wire
+          (path Dessus 2032
+            857250 -411480
+            857250 -379730
+          )
+        )
+        (wire
+          (path Dessus 2032
+            812800 -411480
+            812800 -379730
+          )
+        )
+      )
+    )
+  )
+)

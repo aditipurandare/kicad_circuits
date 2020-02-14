@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ecc83_schlib)(type Legacy)(uri "/home/aditi/kicad sample projects/ecc83/ecc83_schlib.lib")(options "")(descr ""))
+  (lib (name complex_hierarchy_schlib)(type Legacy)(uri "/home/aditi/kicad sample projects/complex_hierarchy/complex_hierarchy_schlib.lib")(options "")(descr ""))
+)

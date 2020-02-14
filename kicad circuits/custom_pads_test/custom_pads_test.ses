@@ -1,0 +1,65 @@
+
+(session custom_pads_test.ses
+  (base_design custom_pads_test.dsn)
+  (placement
+    (resolution um 10)
+    (component "Dip_sockets:DIP-14__300_ELL"
+      (place U*** 1659000 -1236000 front 180)
+    )
+    (component Discret:C2
+      (place SW1 1042990 -997200 front 0)
+    )
+    (component Connect:1pin
+      (place AE2 1663000 -725000 front 0)
+    )
+    (component Connect:1pin::1
+      (place AE1 1001500 -658600 front 20)
+    )
+    (component "Diodes_SMD:DO-214AB"
+      (place R2 1369000 -1015000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "5.1.5-52549c5~84~ubuntu18.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:400_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /PAD2
+        (wire
+          (path F.Cu 4000
+            1399480 -999760
+            1392246 -992526
+            1152504 -992526
+            1148080 -996950
+          )
+        )
+      )
+      (net /PAD1
+        (wire
+          (path F.Cu 4000
+            1333000 -1015000
+            1184632 -1163368
+            1061209 -1163368
+            932180 -1034339
+            932180 -996950
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,81 @@
+
+(rules PCB sonde xilinx
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 132881)
+    (layer_rule "top_copper"
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.9)
+    )
+    (layer_rule "bottom_copper"
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 635.0)
+    (clear 254.2)
+    (clear 317.5 (type smd_to_turn_gap))
+    (clear 63.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_1651:635_um"
+    (shape
+      (circle "top_copper" 1651.0 0.0 0.0)
+    )
+    (shape
+      (circle "bottom_copper" 1651.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1651:635_um" "Via[0-1]_1651:635_um" default
+  )
+  (via 
+    "Via[0-1]_1651:635_um-kicad_default" "Via[0-1]_1651:635_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_1651:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1651:635_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 635.0)
+    )
+    (circuit 
+      (use_layer top_copper bottom_copper)
+    )
+  )
+  (class "kicad_default"
+    GND "/CLK-D1" "/CTRL-D3" "/DONE-SELECT*" "/PWR_3,3-5V" "/TCK-CCLK" "/TD0-DONE" "/TD0-PROG-D4"
+    "/TDI-DIN" "/TDI-DIN-D0" "/TMS-PROG" "/TMS-PROG-D2" "/VCC_SENSE-ERROR*" VCC "Net-(C3-Pad1)" "Net-(R4-Pad1)"
+    "Net-(U2-Pad6)" "Net-(U2-Pad8)" "Net-(U2-Pad11)" "Net-(R6-Pad1)" "Net-(R8-Pad1)" "Net-(R7-Pad1)" "Net-(C2-Pad1)" "Net-(C5-Pad1)"
+    "Net-(R10-Pad1)" "Net-(C4-Pad1)" "Net-(R9-Pad1)" "Net-(D1-Pad2)" "Net-(J1-Pad11)" "Net-(J1-Pad10)" "Net-(J1-Pad9)" "Net-(J1-Pad7)"
+    "Net-(J1-Pad1)" "Net-(J1-Pad24)" "Net-(J1-Pad23)" "Net-(J1-Pad22)" "Net-(J1-Pad21)" "Net-(J1-Pad19)" "Net-(J1-Pad18)" "Net-(J1-Pad17)"
+    "Net-(J1-Pad16)" "Net-(J1-Pad14)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 635.0)
+    )
+    (circuit 
+      (use_layer top_copper bottom_copper)
+    )
+  )
+)

@@ -1,0 +1,169 @@
+
+(rules PCB kit-dev-coldfire-xilinx_5213
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 887)
+    (layer_rule "Top_layer"
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule "GND_layer"
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule "VDD_layer"
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule "Bottom_layer"
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 150.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 37.6 (type smd_smd))
+  )
+  (padstack "Via[0-3]_600:400_um"
+    (shape
+      (circle "Top_layer" 600.0 0.0 0.0)
+    )
+    (shape
+      (circle "GND_layer" 600.0 0.0 0.0)
+    )
+    (shape
+      (circle "VDD_layer" 600.0 0.0 0.0)
+    )
+    (shape
+      (circle "Bottom_layer" 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle "Top_layer" 800.0 0.0 0.0)
+    )
+    (shape
+      (circle "GND_layer" 800.0 0.0 0.0)
+    )
+    (shape
+      (circle "VDD_layer" 800.0 0.0 0.0)
+    )
+    (shape
+      (circle "Bottom_layer" 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_600:400_um" "Via[0-3]_600:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_600:400_um-kicad_default" "Via[0-3]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_600:400_um-POWER" "Via[0-3]_600:400_um" POWER
+  )
+  (via 
+    "Via[0-3]_800:400_um-POWER" "Via[0-3]_800:400_um" POWER
+  )
+  (via_rule
+    default "Via[0-3]_600:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_600:400_um-kicad_default"
+  )
+  (via_rule
+    POWER "Via[0-3]_800:400_um-POWER"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer Top_layer Bottom_layer)
+    )
+  )
+  (class "kicad_default"
+    /ALLPST /AN2 /AN3 /AN4 /AN6 "/BKPT-" /CLKIN/EXTAL /CLKMOD0
+    /CLKMOD1 /DDAT0 /DDAT1 /DDAT2 /DDAT3 /DSCLK /DSI /DSO
+    /DTIN1 /GPT1 /GPT3 "/IRQ-5" "/IRQ-6" "/IRQ-7" "/JTAG_EN" /PST0
+    /PST1 /PST2 /PST3 "/QSPI_CS3" /TCLK /VDDPLL "/inout_user/CAN_H" "/inout_user/CAN_L"
+    "/inout_user/CTS0" "/inout_user/CTS1" "/inout_user/CTS2/CANH" "/inout_user/RTS0" "/inout_user/RTS1" "/inout_user/RTS2" "/inout_user/RXD0" "/inout_user/RXD1"
+    "/inout_user/RXD2" "/inout_user/RxD_CAN" "/inout_user/TXD0" "/inout_user/TXD1" "/inout_user/TXD2/CANL" "/inout_user/TxD_CAN" "/xilinx/+3,3V_OUT" "/xilinx/LED_TEST1"
+    "/xilinx/LED_TEST2" /xilinx/TCK /xilinx/TDI /xilinx/TDO /xilinx/TMS "/xilinx/XIL_D0" "/xilinx/XIL_D1" "/xilinx/XIL_D10"
+    "/xilinx/XIL_D11" "/xilinx/XIL_D12" "/xilinx/XIL_D13" "/xilinx/XIL_D14" "/xilinx/XIL_D15" "/xilinx/XIL_D16" "/xilinx/XIL_D17" "/xilinx/XIL_D18"
+    "/xilinx/XIL_D19" "/xilinx/XIL_D2" "/xilinx/XIL_D20" "/xilinx/XIL_D21" "/xilinx/XIL_D22" "/xilinx/XIL_D23" "/xilinx/XIL_D24" "/xilinx/XIL_D25"
+    "/xilinx/XIL_D26" "/xilinx/XIL_D27" "/xilinx/XIL_D28" "/xilinx/XIL_D29" "/xilinx/XIL_D3" "/xilinx/XIL_D30" "/xilinx/XIL_D31" "/xilinx/XIL_D32"
+    "/xilinx/XIL_D33" "/xilinx/XIL_D34" "/xilinx/XIL_D35" "/xilinx/XIL_D36" "/xilinx/XIL_D4" "/xilinx/XIL_D5" "/xilinx/XIL_D6" "/xilinx/XIL_D7"
+    "/xilinx/XIL_D8" "/xilinx/XIL_D9" "Net-(ABRT_SW1-Pad1)" "Net-(BDM_PORT1-Pad6)" "Net-(BDM_PORT1-Pad26)" "Net-(C3-Pad1)" "Net-(C15-Pad1)" "Net-(C23-Pad2)"
+    "Net-(C24-Pad1)" "Net-(C24-Pad2)" "Net-(C25-Pad1)" "Net-(C25-Pad2)" "Net-(C27-Pad1)" "Net-(C30-Pad2)" "Net-(C31-Pad1)" "Net-(C31-Pad2)"
+    "Net-(C32-Pad1)" "Net-(C32-Pad2)" "Net-(C33-Pad1)" "Net-(C35-Pad2)" "Net-(C36-Pad1)" "Net-(C36-Pad2)" "Net-(C38-Pad1)" "Net-(C43-Pad2)"
+    "Net-(C44-Pad1)" "Net-(C44-Pad2)" "Net-(C45-Pad1)" "Net-(CAN_TERM1-Pad2)" "Net-(COM_SEL1-Pad3)" "Net-(COM_SEL2-Pad3)" "Net-(COM_SEL3-Pad3)" "Net-(D8-Pad1)"
+    "Net-(D9-Pad1)" "Net-(F1-Pad1)" "Net-(J1-Pad3)" "Net-(L1-Pad1)" "Net-(LED1-Pad1)" "Net-(LED2-Pad1)" "Net-(LED3-Pad1)" "Net-(LED4-Pad1)"
+    "Net-(LED5-Pad1)" "Net-(LEDABRT1-Pad2)" "Net-(LED_EN1-Pad2)" /AN0 /AN1 "/QSPI_CS0" /AN5 /AN7
+    "/IRQ-4" /DTIN0 /DTIN2 /DTIN3 /GPT0 /GPT2 "Net-(P3-Pad2)" "Net-(P3-Pad4)"
+    "Net-(PULUPEN1-Pad2)" "Net-(PULUPEN1-Pad4)" "Net-(PULUPEN1-Pad6)" "Net-(PULUPEN1-Pad8)" "Net-(Q1-Pad2)" "Net-(Q1-Pad3)" "Net-(R9-Pad1)" "Net-(R22-Pad2)"
+    "Net-(R23-Pad2)" "Net-(R28-Pad2)" "Net-(R30-Pad2)" "Net-(R31-Pad2)" "Net-(R32-Pad2)" "Net-(R33-Pad2)" "Net-(R35-Pad2)" "Net-(R36-Pad1)"
+    "Net-(R46-Pad1)" "Net-(U3-Pad9)" "Net-(U3-Pad11)" "Net-(U3-Pad12)" "Net-(U5-Pad9)" "Net-(U5-Pad11)" "Net-(U5-Pad12)" "Net-(U7-Pad5)"
+    "Net-(U8-Pad9)" "Net-(U8-Pad10)" "Net-(U8-Pad12)" "Net-(UARTCAN0-Pad1)" "Net-(UARTCAN1-Pad1)" "Net-(UARTCAN2-Pad1)" "Net-(D1-Pad1)" /VCCA
+    "/IRQ-1" "/IRQ-2" "/IRQ-3" /XTAL "/RCON-" "/RSTO-" "/RSTI-" "/QSPI_CS1"
+    /URTS1 /UCTS1 "/QSPI_CLK" "/DSPI_DOUT" "/QSPI_DIN" "/QSPI_CS2" /URXD1 /UTXD1
+    /PWM7 /PWM5 /PWM1 /PWM3 /URTS2 /UTXD2 /URXD2 /UCTS2
+    /CANRX /CANTX /URTS0 /UTXD0 /URXD0 /UCTS0 "Net-(SW_ONOFF1-Pad1)" "Net-(UARTCAN2-Pad9)"
+    "Net-(UARTCAN0-Pad9)" "Net-(UARTCAN1-Pad9)" "Net-(VR1-Pad4)" "Net-(U9-Pad141)" "Net-(U9-Pad133)" "Net-(U9-Pad121)" "Net-(U9-Pad120)" "Net-(U9-Pad110)"
+    "Net-(U9-Pad106)" "Net-(U9-Pad103)" "Net-(U9-Pad102)" "Net-(U9-Pad94)" "Net-(U9-Pad93)" "Net-(U9-Pad92)" "Net-(U9-Pad91)" "Net-(U9-Pad90)"
+    "Net-(U9-Pad88)" "Net-(U9-Pad87)" "Net-(U9-Pad86)" "Net-(U9-Pad84)" "Net-(U9-Pad83)" "Net-(U9-Pad82)" "Net-(U9-Pad81)" "Net-(U9-Pad80)"
+    "Net-(U9-Pad79)" "Net-(U9-Pad78)" "Net-(U9-Pad77)" "Net-(U9-Pad75)" "Net-(U9-Pad74)" "Net-(U9-Pad72)" "Net-(U9-Pad71)" "Net-(U9-Pad70)"
+    "Net-(U9-Pad69)" "Net-(U9-Pad68)" "Net-(U9-Pad67)" "Net-(U9-Pad66)" "Net-(U9-Pad65)" "Net-(U9-Pad63)" "Net-(U9-Pad62)" "Net-(U9-Pad61)"
+    "Net-(U9-Pad60)" "Net-(U9-Pad56)" "Net-(U9-Pad55)" "Net-(U9-Pad41)" "Net-(U9-Pad40)" "Net-(U9-Pad39)" "Net-(U9-Pad38)" "Net-(U9-Pad37)"
+    "Net-(U9-Pad36)" "Net-(U9-Pad35)" "Net-(U9-Pad34)" "Net-(U9-Pad30)" "Net-(U9-Pad29)" "Net-(U9-Pad26)" "Net-(U9-Pad25)" "Net-(U9-Pad23)"
+    "Net-(U9-Pad22)" "Net-(U9-Pad21)" "Net-(U9-Pad19)" "Net-(U9-Pad18)" "Net-(U9-Pad16)" "Net-(U9-Pad15)" "Net-(U9-Pad14)" "Net-(U9-Pad9)"
+    "Net-(BDM_PORT1-Pad22)" "Net-(BDM_PORT1-Pad21)" "Net-(BDM_PORT1-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer Top_layer Bottom_layer)
+    )
+  )
+  (class POWER
+    +3.3V GND GNDA
+    (clearance_class POWER)
+    (via_rule POWER)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer Top_layer Bottom_layer)
+    )
+  )
+)
